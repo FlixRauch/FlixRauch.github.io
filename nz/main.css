@@ -33,6 +33,10 @@ img.user{
     margin-top: -50px;
 }
 
+img.banner{
+    width: 100%;
+}
+
 footer{
     border-top: 1px solid black;
     padding: 1em 2em 3em 1em;
