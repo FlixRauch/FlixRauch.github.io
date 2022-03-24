@@ -24,6 +24,10 @@ article p {
     line-height: 1.2em;
 }
 
+article figure img {
+    width: 100%;
+}
+
 a {
     color: black;
 }
