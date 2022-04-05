@@ -17,6 +17,9 @@
     <!-- Leaflet Bibliothek -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+
+    <!-- Kartenskript -->
+    <script src="main.js"></script>
 </head>
 
 <body>
@@ -83,18 +86,7 @@
         </footer>
     </main>
 
-    <script>
-        var map = L.map('map').setView([-43.443767, 170.173520], 11);
-
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(map);
-
-        L.marker([-43.443767, 170.173520]).addTo(map)
-            .bindPopup('<h3>Franz-Josef-Gletscher</h3>')
-            .openPopup();
-
-    </script>
+    
 
 </body>
 
