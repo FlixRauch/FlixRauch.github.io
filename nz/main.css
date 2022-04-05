@@ -1,6 +1,6 @@
 /* Stile für Neusellandreise --> Kommentare in CSS*/
 
-body{
+body {
     background-color: #eeeeee;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -9,15 +9,15 @@ header {
     text-align: center;
 }
 
-main{
+main {
     background-color: white;
     max-width: 1024px;
     margin: auto;
 }
 
-article{
+article {
     padding: 1em;
-    
+
 }
 
 article p {
@@ -33,16 +33,16 @@ a {
     color: black;
 }
 
-img.user{
+img.user {
     border-radius: 50%;
     margin-top: -50px;
 }
 
-img.banner{
+img.banner {
     width: 100%;
 }
 
-footer{
+footer {
     border-top: 1px solid black;
     padding: 1em 2em 3em 1em;
 }
