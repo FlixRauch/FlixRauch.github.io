@@ -1,0 +1,134 @@
+const ETAPPEN = [{
+    "nr": 1,
+    "github": "gatt-f",
+    "titel": "Christchurch",
+    "wikipedia": "https://de.wikipedia.org/wiki/Christchurch",
+    "lat": -43.53,
+    "lng": 172.62028
+}, {
+    "nr": 2,
+    "github": "richard-aw",
+    "titel": "Lake Tekapo",
+    "wikipedia": "https://de.wikipedia.org/wiki/Lake_Tekapo",
+    "lat": -43.88333,
+    "lng": 170.51667
+}, {
+    "nr": 3,
+    "github": "loertlin",
+    "titel": "Moeraki Boulders",
+    "wikipedia": "https://de.wikipedia.org/wiki/Moeraki_Boulders",
+    "lat": -45.34528,
+    "lng": 170.82606
+}, {
+    "nr": 4,
+    "github": "csat6290",
+    "titel": "Dunedin",
+    "wikipedia": "https://de.wikipedia.org/wiki/Dunedin",
+    "lat": -45.86667,
+    "lng": 170.5
+}, {
+    "nr": 5,
+    "github": "weblucas-at",
+    "titel": "Milford Sound",
+    "wikipedia": "https://de.wikipedia.org/wiki/Milford_Sound/Piopiotahi",
+    "lat": -44.675,
+    "lng": 167.92944
+}, {
+    "nr": 6,
+    "github": "fabiigels",
+    "titel": "Queenstown",
+    "wikipedia": "https://de.wikipedia.org/wiki/Queenstown_(Neuseeland)",
+    "lat": -45.03111,
+    "lng": 168.6625
+}, {
+    "nr": 7,
+    "github": "mariaheinrich97",
+    "titel": "Wanaka",
+    "wikipedia": "https://de.wikipedia.org/wiki/Wanaka",
+    "lat": -44.7,
+    "lng": 169.15
+}, {
+    "nr": 8,
+    "github": "stefangerer",
+    "titel": "Fox-Gletscher",
+    "wikipedia": "https://de.wikipedia.org/wiki/Fox-Gletscher",
+    "lat": -43.53,
+    "lng": 170.15
+}, {
+    "nr": 9,
+    "github": "flixrauch",
+    "titel": "Franz-Josef-Gletscher",
+    "wikipedia": "https://de.wikipedia.org/wiki/Franz-Josef-Gletscher",
+    "lat": -43.3856,
+    "lng": 170.18353
+}, {
+    "nr": 10,
+    "github": "voitmax",
+    "titel": "Abel-Tasman-Nationalpark",
+    "wikipedia": "https://de.wikipedia.org/wiki/Abel-Tasman-Nationalpark",
+    "lat": -41.00778,
+    "lng": 173.00889
+}, {
+    "nr": 11,
+    "github": "ibkrob",
+    "titel": "Picton",
+    "wikipedia": "https://de.wikipedia.org/wiki/Picton_(Neuseeland)",
+    "lat": -41.28333,
+    "lng": 174
+}, {
+    "nr": 12,
+    "github": "joelrl1",
+    "titel": "Wellington",
+    "wikipedia": "https://de.wikipedia.org/wiki/Wellington",
+    "lat": -41.28889,
+    "lng": 174.77722
+}, {
+    "nr": 13,
+    "github": "paulasp3",
+    "titel": "Napier",
+    "wikipedia": "https://de.wikipedia.org/wiki/Napier_(Neuseeland)",
+    "lat": -39.48333,
+    "lng": 176.91667
+}, {
+    "nr": 14,
+    "github": "webmapping",
+    "titel": "Tongariro-Nationalpark",
+    "wikipedia": "https://de.wikipedia.org/wiki/Tongariro-Nationalpark",
+    "lat": -39.2,
+    "lng": 175.58333
+}, {
+    "nr": 15,
+    "github": "andrea-1408",
+    "titel": "Taupo",
+    "wikipedia": "https://de.wikipedia.org/wiki/Taupo_(Stadt)",
+    "lat": -38.6875,
+    "lng": 176.0694
+}, {
+    "nr": 16,
+    "github": "mobulu",
+    "titel": "Rotorua",
+    "wikipedia": "https://de.wikipedia.org/wiki/Rotorua",
+    "lat": -38.13778,
+    "lng": 176.25139
+}, {
+    "nr": 17,
+    "github": "franzwagner7",
+    "titel": "Coromandel Peninsula",
+    "wikipedia": "https://de.wikipedia.org/wiki/Coromandel_Peninsula",
+    "lat": -37.88278,
+    "lng": 175.63667
+}, {
+    "nr": 18,
+    "github": "helli07",
+    "titel": "Cape Reinga",
+    "wikipedia": "https://de.wikipedia.org/wiki/Cape_Reinga",
+    "lat": -34.42389,
+    "lng": 172.6775
+}, {
+    "nr": 19,
+    "github": "nellyhoppe",
+    "titel": "Auckland",
+    "wikipedia": "https://de.wikipedia.org/wiki/Auckland",
+    "lat": -36.84042,
+    "lng": 174.73987
+}];
