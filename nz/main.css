@@ -64,3 +64,13 @@ footer .next {
     height: 600px;
     border: 1px solid gray;
 }
+
+.etappenLink {
+    background: white;
+    border: 1px solid black;
+    padding: 0.5em;
+    width: 2em;
+    text-align: center;
+    margin-top: 0.5em;
+    display: inline-block;
+}
