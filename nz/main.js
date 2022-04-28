@@ -3,8 +3,8 @@
 
 let zoom = 11;
 let coords = [
-    ETAPPEN[10].lat,
-    ETAPPEN[10].lng
+    ETAPPEN[9].lat,
+    ETAPPEN[9].lng
 ];
 
 
