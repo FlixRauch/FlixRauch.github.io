@@ -61,3 +61,8 @@ for (let hut of HUTS) {
         color: statusColor
     }).addTo(map).bindPopup(popup);
 }
+
+// Metrischen Maßstab hinzufügen
+L.control.scale({
+    imperial: false
+}).addTo(map);
