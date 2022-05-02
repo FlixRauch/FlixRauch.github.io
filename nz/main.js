@@ -11,6 +11,10 @@ let coords = [
 
 let map = L.map('map').setView(coords, zoom);
 
+let startlayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+})
+
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
@@ -66,3 +70,15 @@ for (let hut of HUTS) {
 L.control.scale({
     imperial: false
 }).addTo(map);
+
+// Layer Control mit verschiedenen Layern 
+let layerControl = L.control.layers({
+    "Open Street Map" : startLayer,
+    "Basemap Standard" : L.tileLayer.provider("BasemapAT.grau"),
+    "Basemap Terrain" : L.tileLayer.provider("BasemapAT.terrain"),
+    "Basemap Surface" : L.tileLayer.provider("BasemapAT.surface"),
+    "Basemap Beschriftung" : L.tileLayer.provider("BasemapAT.overlay"),
+    "Basemap Orthofoto" : L.tileLayer.provider("BasemapAT.orthofoto"),
+    "Basemap Orthofoto mit Beschriftung" : L.layerGroup([L.tileLayer.provider("BasemapAT.orthofoto"),
+    L.tileLayer.provider("BasemapAT.overlay")])
+}).addTo(map)
