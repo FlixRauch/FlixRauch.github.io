@@ -11,13 +11,24 @@ let coords = [
 
 let map = L.map('map').setView(coords, zoom);
 
+//Startlayer
 let startlayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-})
+});
 
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+//Layercontrol
+let layerControl = L.control.layers({
+    "Openstreetmap": startlayer,
+    "Topographie": L.tileLayer.provider("OpenTopoMap"),
+    "Satellite images": L.tileLayer.provider("USGS.USImagery")
+
 }).addTo(map);
+
+//Minimap
+let miniMap = new L.Control.MiniMap(
+    L.tileLayer.provider("OpenStreetMap.Mapnik")
+
+).addTo(map);
 
 
 
@@ -34,14 +45,16 @@ for (let etappe of ETAPPEN) {
   `;
     let navClass = "etappenLink"
     let mrk = L.marker([etappe.lat, etappe.lng]).addTo(map).bindPopup(popup);
-    if (etappe.nr == 9){
+    if (etappe.nr == 9) {
         mrk.openPopup();
-        navClass="etappenLink etappeAktuell"
+        navClass = "etappenLink etappeAktuell"
     }
     // Etappennavigation erweitern
     let link = `<a href="https://${etappe.github}.github.io/nz/" class="${navClass}" title="${etappe.titel}">${etappe.nr}</a>`;
     document.querySelector("#navigation").innerHTML += link;
 }
+
+
 
 // DOC Hütten anzeigen
 for (let hut of HUTS) {
@@ -56,7 +69,7 @@ for (let hut of HUTS) {
   `;
 
     let statusColor
-    if (hut.open == true){
+    if (hut.open == true) {
         statusColor = "green"
     } else {
         statusColor = "red"
@@ -71,14 +84,7 @@ L.control.scale({
     imperial: false
 }).addTo(map);
 
-// Layer Control mit verschiedenen Layern 
-let layerControl = L.control.layers({
-    "Open Street Map" : startLayer,
-    "Basemap Standard" : L.tileLayer.provider("BasemapAT.grau"),
-    "Basemap Terrain" : L.tileLayer.provider("BasemapAT.terrain"),
-    "Basemap Surface" : L.tileLayer.provider("BasemapAT.surface"),
-    "Basemap Beschriftung" : L.tileLayer.provider("BasemapAT.overlay"),
-    "Basemap Orthofoto" : L.tileLayer.provider("BasemapAT.orthofoto"),
-    "Basemap Orthofoto mit Beschriftung" : L.layerGroup([L.tileLayer.provider("BasemapAT.orthofoto"),
-    L.tileLayer.provider("BasemapAT.overlay")])
-}).addTo(map)
+//Fullscreen
+L.control.fullscreen().addTo(map);
+
+layerControl.expand();
